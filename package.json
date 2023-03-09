@@ -1,0 +1,23 @@
+{
+  "name": "tsp-osm-umd",
+  "version": "1.0.0",
+  "description": "Problema del agente viajero resuelto dibujado en Open Street Map. Electiva de geolocalización Uniminuto.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgesanux/tsp-osm-umd.git"
+  },
+  "author": "jorgesanux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorgesanux/tsp-osm-umd/issues"
+  },
+  "homepage": "https://github.com/jorgesanux/tsp-osm-umd#readme",
+  "dependencies": {
+    "decimal.js": "^10.4.3"
+  }
+}
