@@ -1,0 +1,81 @@
+{
+  "ciudades": [
+    {
+      "nombre": "Bogotá",
+      "altura": 2640,
+      "longitud": -74.0703,
+      "latitud": 4.6483,
+      "demora": 30
+    },
+    {
+      "nombre": "Medellín",
+      "altura": 1495,
+      "longitud": -75.5662,
+      "latitud": 6.2442,
+      "demora": 25
+    },
+    {
+      "nombre": "Cali",
+      "altura": 995,
+      "longitud": -76.5283,
+      "latitud": 3.4518,
+      "demora": 20
+    },
+    {
+      "nombre": "Barranquilla",
+      "altura": 15,
+      "longitud": -74.7808,
+      "latitud": 10.9254,
+      "demora": 15
+    },
+    {
+      "nombre": "Cartagena",
+      "altura": 2,
+      "longitud": -75.5425,
+      "latitud": 10.3997,
+      "demora": 20
+    },
+    {
+      "nombre": "Cúcuta",
+      "altura": 320,
+      "longitud": -72.5164,
+      "latitud": 7.8931,
+      "demora": 15
+    },
+    {
+      "nombre": "Ibagué",
+      "altura": 1275,
+      "longitud": -75.2367,
+      "latitud": 4.4404,
+      "demora": 15
+    },
+    {
+      "nombre": "Manizales",
+      "altura": 2150,
+      "longitud": -75.5079,
+      "latitud": 5.0693,
+      "demora": 20
+    },
+    {
+      "nombre": "Pereira",
+      "altura": 1410,
+      "longitud": -75.6974,
+      "latitud": 4.8087,
+      "demora": 20
+    },
+    {
+      "nombre": "Pasto",
+      "altura": 2535,
+      "longitud": -77.2783,
+      "latitud": 1.2132,
+      "demora": 20
+    },
+    {
+      "nombre": "Quibdó",
+      "altura": 58,
+      "longitud": -76.6335,
+      "latitud": 5.6901,
+      "demora": 10
+    }
+  ]
+}
