@@ -18,6 +18,10 @@ El archivo input_data.json contiene la lista de las ciudades ejemplo con las cua
 }
 ```
 
+## Conceptos
+- Latitud(ϕ): Se representa con la letra griega Phi(ϕ).
+- Longitud(λ): Se representa con la letra griega Lambda(λ).
+
 ## Cálculos a usar
 Para realizar el ejercicio se va a realizar el uso de varias formulas, ecuaciones y cálculos dependiendo del paso a ejecutar.
 
