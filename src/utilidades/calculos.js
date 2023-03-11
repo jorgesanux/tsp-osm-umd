@@ -7,11 +7,20 @@ import { RADIO_TIERRA } from './contantes.js';
 
 /**
  * Convierte valores de grados a radianes.
- * @param {number} grados 
+ * @param {number | Decimal} grados 
  * @returns {Decimal}
  */
 export function aRadianes(grados) {
     return new Decimal(grados).mul(Math.PI).div(180);
+}
+
+/**
+ * Convierte de metros(m) a kilómetros(km)
+ * @param {number | Decimal} distanciaMetros 
+ * @returns {Decimal}
+ */
+export function aKilometros(distanciaMetros){
+    return Decimal.div(distanciaMetros, 1000);
 }
 
 /**
@@ -51,4 +60,17 @@ export function distanciaEntreCoordenadas(coord1, coord2) {
         .sqrt();
 
     return Decimal.mul(2, RADIO_TIERRA).mul(raizCuadrada.asin());
+}
+
+/**
+ * Calcula la hipotenusa en base a los dos catetos, el adyacente y el opuesto.
+ * @param {number | Decimal} catetoAdyacente 
+ * @param {number | Decimal} catetoOpuesto 
+ * @returns {Decimal}
+ */
+export function hipotenusa(catetoAdyacente, catetoOpuesto){
+    return Decimal.add(
+        Decimal.pow(catetoAdyacente, 2),
+        Decimal.pow(catetoOpuesto, 2)
+    ).sqrt();
 }
