@@ -27,10 +27,10 @@ Para realizar el ejercicio se va a realizar el uso de varias formulas, ecuacione
 
 ### Fórmula del Haversine
 Se usara la formula de Haversine para calcular la distancia entre dos puntos de la tierra, a partir de la latitud y longitud de cada uno.
-![Formula de Haversine](./assets/imgs/formula-haversine.png)
+![Formula de Haversine](./recursos/imgs/formula-haversine.png)
 
 ### Teorema de Pitágoras
 Se usara el teorema de Pitágoras para complementar el calculo de la distancia entre dos puntos, hallando la hipotenusa. Esto debido a las diferentes alturas que presentan las ciudades.
 Se toma como punto de referencia la ciudad con la altitud menor y en base a esta, se calcula la distancia real teniendo en cuenta la altura y la distancia plana por la **Fórmula del Haversine**.
-![Teorema de Pitágoras](./assets/imgs/teorema-pitagoras.jpg)
+![Teorema de Pitágoras](./recursos/imgs/teorema-pitagoras.jpg)
 

@@ -1,0 +1,1 @@
+export const RADIO_TIERRA = 6371;
