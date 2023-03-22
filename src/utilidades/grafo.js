@@ -176,4 +176,18 @@ export class Grafo{
             }
         }
     }
+	
+	imprimirMermaid(){
+		console.log("graph TD");
+		const rutas = new Set();
+		for(const aristas of this.#listaAdyacencia.values()){
+			for(const arista of aristas){
+                //Buscar una mejor forma para identificar las aristas ya agregadas 
+				if(rutas.has(`${arista.origen.llave} ---|${arista.peso}| ${arista.destino.llave}`) ||
+					rutas.has(`${arista.destino.llave} ---|${arista.peso}| ${arista.origen.llave}`)) continue;
+				rutas.add(`${arista.origen.llave} ---|${arista.peso}| ${arista.destino.llave}`);
+			}
+		}
+		console.log([...rutas.values()].join("\n"));
+	}
 }
