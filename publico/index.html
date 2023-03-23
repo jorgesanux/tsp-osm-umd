@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta mas corta entre ciudades | TSP</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="contenedor_global">
+        <div class="barra_lateral">
+            <div class="cabecera">
+                <div class="titulo">Ciudades</div>
+                <div class="subida_documento">
+                    <label for="archivo">
+                        <input id="archivo" class="entrada_archivo" type="file" accept="application/json">
+                    </label>
+                    <button class="boton_enviar">Enviar</button>
+                </div>
+            </div>
+            <div class="footer">
+                <p>TSP Ciudades v0.0.1</p>
+                <p>Electiva geolocalizaciòn</p>
+                <p>Uniminuto</p>
+                <p>2023</p>
+            </div>
+        </div>
+        <div class="contenedor_mapa">
+            <div id="mapa"></div>
+        </div>
+    </div>
+</body>
+
+</html>
