@@ -5,27 +5,26 @@ const mapa = L.map("mapa").setView([4.750039062160531, -74.0958234459527], 6.5);
 let marcadores = [];
 let lineas = []
 
-function limpiarMarcadores(){
-    for(const marcador of marcadores){
+function limpiarMarcadores() {
+    for (const marcador of marcadores) {
         marcador.remove();
     }
     marcadores = [];
 }
 
-function limpiarLineas(){
-    for(const linea of lineas){
+function limpiarLineas() {
+    for (const linea of lineas) {
         linea.remove();
     }
-
     lineas = [];
 }
 
-function colorAleatorio(){
+function colorAleatorio() {
     const colores = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#00FFFF", "#FFA500"];
     return colores[Math.floor(Math.random() * colores.length)];
 }
 
-botonEnviar.addEventListener("click", async function(e){
+botonEnviar.addEventListener("click", async function (e) {
     limpiarMarcadores();
     limpiarLineas();
     const archivo = entradaArchivo.files[0];
@@ -38,9 +37,9 @@ botonEnviar.addEventListener("click", async function(e){
     });
     const json = await response.json();
     const { results: ciudades } = json;
-    for(let i = 0; i < ciudades.length; i++){
+    for (let i = 0; i < ciudades.length; i++) {
         const marcador = L.marker([ciudades[i].latitud, ciudades[i].longitud]).addTo(mapa);
-        if(i !== ciudades.length -1){
+        if (i !== ciudades.length - 1) {
             marcador.bindPopup(`${i + 1} - ${ciudades[i].nombre}`, {
                 autoClose: false
             }).openPopup();
@@ -49,13 +48,13 @@ botonEnviar.addEventListener("click", async function(e){
     }
 
     const color = colorAleatorio();
-    for(let i = 0; i < marcadores.length - 1; i++){
+    for (let i = 0; i < marcadores.length - 1; i++) {
         const marcador1 = marcadores[i];
-        const marcador2 = marcadores[i+1];
+        const marcador2 = marcadores[i + 1];
 
         const linea = L.polyline(
-           [marcador1.getLatLng(), marcador2.getLatLng()] ,
-           { color },
+            [marcador1.getLatLng(), marcador2.getLatLng()],
+            { color },
         ).addTo(mapa);
         lineas.push(linea);
     }
