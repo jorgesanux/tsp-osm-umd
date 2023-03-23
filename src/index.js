@@ -10,7 +10,7 @@ import jsonCiudades from "./datos/ciudades.json" assert { type: 'json'};
  * @param {Object[]} datosCiudades 
  * @returns {Grafo};
  */
-function generarGrafo(datosCiudades){
+export function generarGrafo(datosCiudades){
     const grafo = new Grafo();
     grafo.agregarVertices(
         datosCiudades.map(ciudad => new Vertice(ciudad.nombre))
@@ -46,7 +46,7 @@ function generarGrafo(datosCiudades){
  * @param {Grafo} grafo 
  * @returns {Vertice[]} Vertices en el orden de la ruta
  */
-function tspVecinoCercano(grafo){
+export function tspVecinoCercano(grafo){
     const ruta = [];
 
     const verticesCiudades = [...grafo.vertices.values()];
@@ -101,4 +101,4 @@ function inicializador(){
 }
 
 
-inicializador();
+// inicializador();
