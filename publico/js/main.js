@@ -1,6 +1,7 @@
-const entradaArchivo = document.querySelector(".entradaArchivo");
-const botonEnviar = document.querySelector(".botonEnviar");
-const mapa = L.map("mapa_sexy").setView([4.750039062160531, -74.0958234459527], 6.5);
+const entradaArchivo = document.querySelector(".entrada_archivo");
+const botonEnviar = document.querySelector(".boton_enviar");
+const mapa = L.map("mapa").setView([4.750039062160531, -74.0958234459527], 6.5);
+
 let marcadores = [];
 let lineas = []
 
@@ -31,7 +32,7 @@ botonEnviar.addEventListener("click", async function(e){
     const datosFormulario = new FormData();
     datosFormulario.append("archivo", archivo);
 
-    const response = await fetch("/subir_archivo", {
+    const response = await fetch("/api/calcular_ruta", {
         method: "POST",
         body: datosFormulario
     });

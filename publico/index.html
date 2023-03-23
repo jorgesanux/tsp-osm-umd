@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruta mas corta entre ciudades</title>
+    <title>Ruta mas corta entre ciudades | TSP</title>
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-     crossorigin=""/>
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
     <link rel="stylesheet" href="./css/main.css">
-      <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-        crossorigin=""></script>
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <script defer src="./js/main.js"></script>
 </head>
+
 <body>
-    <div>
-        <input class="entradaArchivo" type="file">
-        <button class="botonEnviar">Enviar</button>
+    <div class="contenedor_global">
+        <div class="barra_lateral">
+            <div class="titulo">
+                TSP ciudades v0.0.1
+            </div>
+            <div class="subida_documento">
+                <input class="entrada_archivo" type="file">
+                <button class="boton_enviar">Enviar</button>
+            </div>
+        </div>
+        <div class="contenedor_mapa">
+            <div id="mapa"></div>
+        </div>
     </div>
-    <div id="mapa_sexy"></div>
 </body>
+
 </html>
