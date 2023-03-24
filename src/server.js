@@ -1,6 +1,8 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
+import Joi from "joi";
+
 import enrutadorApi from "./rutas/api.js"
 
 const __filename = fileURLToPath(import.meta.url);
@@ -14,8 +16,12 @@ app.use(express.static(path.join(__dirname, "../publico")));
 app.use("/api", enrutadorApi);
 
 app.use(function(error, req, res, next){
-    res.status(500).json({
-        code: 500,
+    let codigo = error instanceof Joi.ValidationError 
+        ? 400 
+        : 500;
+
+    res.status(codigo).json({
+        code: codigo,
         message: error.message
     })
 });
