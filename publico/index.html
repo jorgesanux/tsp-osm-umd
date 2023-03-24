@@ -13,7 +13,7 @@
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-    <script defer src="./js/main.js"></script>
+    <script defer src="./js/main.js" type="module"></script>
 </head>
 
 <body>
@@ -25,7 +25,10 @@
                     <label for="archivo">
                         <input id="archivo" class="entrada_archivo" type="file" accept="application/json">
                     </label>
-                    <button class="boton_enviar">Enviar</button>
+                    <div>
+                        <button class="boton_limpiar">Limpiar</button>
+                        <button class="boton_enviar">Enviar</button>
+                    </div>
                 </div>
             </div>
             <div class="footer">

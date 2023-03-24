@@ -1,13 +1,6 @@
 {
   "ciudades": [
     {
-      "nombre": "Bogotá",
-      "altura": 2640,
-      "longitud": -74.0703,
-      "latitud": 4.6483,
-      "demora": 30
-    },
-    {
       "nombre": "Medellín",
       "altura": 1495,
       "longitud": -75.5662,
@@ -16,59 +9,129 @@
     },
     {
       "nombre": "Cali",
-      "altura": 995,
-      "longitud": -76.5283,
-      "latitud": 3.4518,
+      "altura": 1003,
+      "longitud": -76.5019,
+      "latitud": 3.4516,
       "demora": 20
     },
     {
       "nombre": "Barranquilla",
-      "altura": 15,
-      "longitud": -74.7808,
-      "latitud": 10.9254,
+      "altura": 7,
+      "longitud": -74.8062,
+      "latitud": 10.9639,
       "demora": 15
     },
     {
       "nombre": "Cartagena",
       "altura": 2,
-      "longitud": -75.5425,
+      "longitud": -75.5626,
       "latitud": 10.3997,
-      "demora": 20
+      "demora": 18
     },
     {
       "nombre": "Cúcuta",
       "altura": 320,
-      "longitud": -72.5164,
-      "latitud": 7.8931,
-      "demora": 15
+      "longitud": -72.5053,
+      "latitud": 7.8939,
+      "demora": 17
     },
     {
-      "nombre": "Ibagué",
-      "altura": 1275,
-      "longitud": -75.2367,
-      "latitud": 4.4404,
-      "demora": 15
-    },
-    {
-      "nombre": "Manizales",
-      "altura": 2150,
-      "longitud": -75.5079,
-      "latitud": 5.0693,
-      "demora": 20
+      "nombre": "Bucaramanga",
+      "altura": 959,
+      "longitud": -73.1198,
+      "latitud": 7.1194,
+      "demora": 22
     },
     {
       "nombre": "Pereira",
-      "altura": 1410,
-      "longitud": -75.6974,
-      "latitud": 4.8087,
-      "demora": 20
+      "altura": 1411,
+      "longitud": -75.6961,
+      "latitud": 4.8133,
+      "demora": 19
+    },
+    {
+      "nombre": "Santa Marta",
+      "altura": 4,
+      "longitud": -74.2017,
+      "latitud": 11.2404,
+      "demora": 16
+    },
+    {
+      "nombre": "Ibagué",
+      "altura": 1261,
+      "longitud": -75.2323,
+      "latitud": 4.4389,
+      "demora": 21
+    },
+    {
+      "nombre": "Manizales",
+      "altura": 2145,
+      "longitud": -75.5206,
+      "latitud": 5.0709,
+      "demora": 24
     },
     {
       "nombre": "Pasto",
-      "altura": 2535,
-      "longitud": -77.2783,
-      "latitud": 1.2132,
+      "altura": 2527,
+      "longitud": -77.2801,
+      "latitud": 1.2136,
+      "demora": 26
+    },
+    {
+      "nombre": "Neiva",
+      "altura": 442,
+      "longitud": -75.3344,
+      "latitud": 2.9279,
+      "demora": 18
+    },
+    {
+      "nombre": "Valledupar",
+      "altura": 168,
+      "longitud": -73.2463,
+      "latitud": 10.465,
+      "demora": 14
+    },
+    {
+      "nombre": "Armenia",
+      "altura": 1307,
+      "longitud": -75.6823,
+      "latitud": 4.5349,
       "demora": 20
+    },
+    {
+      "nombre": "Sincelejo",
+      "altura": 146,
+      "longitud": -75.3864,
+      "latitud": 9.2924,
+      "demora": 17
+    },
+    {
+      "nombre": "Popayán",
+      "altura": 1760,
+      "longitud": -76.6167,
+      "latitud": 2.4442,
+      "demora": 23
+    },
+    {
+      "nombre": "Tunja",
+      "altura": 2810,
+      "longitud": -73.3653,
+      "latitud": 5.5353,
+      "demora": 25
+    },
+    {
+      "nombre": "Riohacha",
+      "altura": 5,
+      "longitud": -72.9067,
+      "latitud": 11.5345,
+      "demora": 16
+    },
+    {
+      "nombre": "Quibdó",
+      "altura": 46,
+      "longitud": -76.6572,
+      "latitud": 5.6949,
+      "demora": 21
     }
   ]
 }

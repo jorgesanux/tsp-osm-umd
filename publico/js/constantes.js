@@ -1,0 +1,3 @@
+export const COORDENADAS_INICIALES = [4.750039062160531, -74.0958234459527];
+export const ZOOM = 6.5;
+export const COLORES = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#00FFFF", "#FFA500"];
