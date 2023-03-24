@@ -88,8 +88,8 @@ export class Arista {
  */
 export class Grafo{
     /**
-     * Conjunto de vértices
-     * @type {Set<Vertice>}
+     * Mapa de vértices
+     * @type {Map<string, Vertice>}
      */
     #vertices;
 
@@ -100,7 +100,7 @@ export class Grafo{
     #listaAdyacencia;
 
     constructor(){
-        this.#vertices = new Set();
+        this.#vertices = new Map();
         this.#listaAdyacencia = new Map();
     }
 
@@ -118,9 +118,10 @@ export class Grafo{
      * @returns {Vertice}
      */
     obtenerVertice(llave){
-        for(let vertice of this.#vertices.values()){
-            if(vertice.llave === llave) return vertice;
-        }
+        return this.#vertices.get(llave);
+        // for(let vertice of this.#vertices.values()){
+        //     if(vertice.llave === llave) return vertice;
+        // }
     }
 
     /**
@@ -128,10 +129,11 @@ export class Grafo{
      * @param {Vertice} vertice 
      */
     agregarVertice(vertice){
-        this.#vertices.add(vertice);
-        if(!this.#listaAdyacencia.has(vertice.llave)){
-            this.#listaAdyacencia.set(vertice.llave, new Set());
-        }
+        if(this.#vertices.has(vertice.llave)) return;
+        if(this.#listaAdyacencia.has(vertice.llave)) return ;
+
+        this.#vertices.set(vertice.llave, vertice);
+        this.#listaAdyacencia.set(vertice.llave, new Set());
     }
 
     /**

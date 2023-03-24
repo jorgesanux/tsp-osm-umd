@@ -16,6 +16,7 @@ const subida = multer({
 enrutador.post("/calcular_ruta", subida.single("archivo"), function(req, res, next){
     const archivo = req.file;
     try{
+        if(!archivo) throw new Error("Debe enviar un archivo.");
         if(archivo.mimetype !== "application/json") 
             throw new Error("Tipo de archivo invalido. Debe ser de tipo JSON.");
 
