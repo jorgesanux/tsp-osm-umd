@@ -1,6 +1,13 @@
 {
   "ciudades": [
     {
+      "nombre": "Bogotá",
+      "altura": 2640,
+      "longitud": -74.0703,
+      "latitud": 4.6483,
+      "demora": 30
+    },
+    {
       "nombre": "Medellín",
       "altura": 1495,
       "longitud": -75.5662,
